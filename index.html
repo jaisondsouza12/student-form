@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Student Registration</h1>
+        <p>Enter your details below</p>
+
+        <form id="studentForm" action="https://script.google.com/macros/s/AKfycbzxPw8SZCo_offllU9zwrAckGZJkCES8icHet76y8mIahnV2wyBvqASx-FbnwUfc57pZQ/exec" method="POST">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="course">Course</label>
+            <select id="course"  name="course" required>
+
+                <option value="">Select Course</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Voc">B.Voc</option>
+                <option value="B.Com">B.Com</option>
+
+            </select>
+
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <p id="result"></p>
+
+    </div>
+
+</body>
+</html>
